@@ -10,3 +10,6 @@ https://helpful-rabanadas-20d681.netlify.app
 
 npm run start
 
+### Pull request sprint_1
+
+https://github.com/bxnchxfxtxms/middle.messenger.praktikum.yandex/pull/1
