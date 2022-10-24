@@ -1,0 +1,11 @@
+  <section class="section">
+    {{> avatar}}
+    <form class="form__form-container form__form-container_place_profile">
+      <fieldset class="form__input-fields">
+        {{#each field}}
+          {{> formField}}
+        {{/each}}
+        {{> button}}
+      </fieldset>
+    </form>
+  </section>
