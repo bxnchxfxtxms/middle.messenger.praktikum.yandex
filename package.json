@@ -5,7 +5,10 @@
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
     "dev": "parcel src/index.html --open --port 3000",
-    "build": "rm -rf public/dist/* && parcel build --public-url ./"
+    "dev:server": "node ./src/utils/server.js",
+    "build": "rm -rf public/dist/* && parcel build --public-url ./",
+    "start": "npm run dev:server"
+
   },
   "repository": {
     "type": "git",
