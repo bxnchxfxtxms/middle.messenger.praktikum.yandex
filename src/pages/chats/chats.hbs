@@ -1,6 +1,37 @@
 <section class="section">
-  <h1 class="chats">
-    {{title}}
-  </h1>
-  <p>{{subtitle}}</p>
+  <div class="chats">
+    <div class="chats__chats-continer">
+      <input class="chats__chat-search-bar" placeholder="Поиск">
+      <ul class="chats__chat-list">
+        <li class="chats__chat">
+          <figure class="chats__current-companion-avatar-container">
+            <img class="chats__current-companion-avatar" alt="companion avatar">
+            <figcaption class="chats__current-companion-name">Вадим</figcaption>
+          </figure>
+          <p class="chats__chat-last-message">Вы: Круто!</p>
+          <p class="chats__chat-last-message-date">Пт</p>
+          <div class="chats__chat-unread-messages-counter"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="chats__current-chat">
+
+      <div class="chats__current-companion">
+        <figure class="chats__current-companion-avatar-container">
+          <img class="chats__current-companion-avatar" alt="companion avatar">
+          <figcaption class="chats__current-companion-name">Вадим</figcaption>
+        </figure>
+      </div>
+
+      <div class="chats__current-conversation">
+        
+      </div>
+
+      <form class="chats__message-input-container">
+        <input class="chats__message-input-field" name="message" placeholder="Сообщение">
+        <button class="chats__send-message-button" type="submit"></button>
+      </form>
+
+    </div>
+  </div>
 </section>

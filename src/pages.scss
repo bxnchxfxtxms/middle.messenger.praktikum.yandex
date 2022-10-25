@@ -1,15 +1,18 @@
-@use 'vendor/normalize.scss';
-@use 'vendor/fonts/fonts.scss';
+@use 'vendor/normalize';
+@use 'vendor/fonts/fonts';
 @use 'modules/error/error';
 @use 'modules/button/button';
 @use 'modules/authorizationForm/authorizationForm';
 @use 'modules/formInputField/formInputField';
 @use 'modules/avatar/avatar';
+@use 'pages/chats/сhats';
+
+@import 'utils/library';
 
 .page {
   font-family: 'Inter', sans-serif;
-  color: #1e1e1e;
-  background-color: #fff;
+  color: $primary-text-color;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +43,7 @@
   font-size: 11px;
   line-height: 11px;
   text-align: center;
-  color: #3369F3;
+  color: $blue;
   text-decoration: none;
 }
 
@@ -59,7 +62,6 @@
   min-height: 720px;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid red;
 }
 
 // NAV MENU STYLE
@@ -83,7 +85,7 @@
 .profile__link {
   font-size: 13px;
   line-height: 13px;
-  color: #3369F3;
+  color: $blue;
   padding: 0 0 10px;
   text-decoration: none;
 }
@@ -93,13 +95,13 @@
 }
 
 .profile__link_color_red {
-  color: #f00;
+  color: $red;
 }
 
 // NAV MENU
 
 .nav-menu__link {
   text-decoration: none;
-  color: #1e1e1e;
+  color: $primary-text-color;
   font-weight: 700;
 }

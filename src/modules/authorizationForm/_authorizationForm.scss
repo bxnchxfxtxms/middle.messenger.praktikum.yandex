@@ -1,3 +1,5 @@
+@import '../../utils/library';
+
 .form__form-container {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,7 @@
   width: 340px;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, .14);
+  box-shadow: 0px 0px 6px $box-shadow;
 }
 
 .form__form-container_place_profile {
