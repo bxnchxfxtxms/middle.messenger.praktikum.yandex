@@ -1,0 +1,72 @@
+@import '../../utils/library';
+
+.form__form-label {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 0 (32px - 18px);
+}
+
+.form__form-label_place_profile {
+  width: 510px;
+  flex-direction: row;
+  border-bottom: 1px solid $profile-input-border;
+  justify-content: space-between;
+}
+
+.form__form-label:last-of-type {
+  margin: 0;
+  border-bottom: none;
+}
+
+.form__input-field {
+  padding: 0 0 7px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $blue;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.form__input-field_place_profile {
+  border: none;
+  text-align: end;
+  padding-bottom: 10px;
+}
+
+.form__input-field::placeholder {
+  color: $secondary-text-color;
+}
+
+.form__input-field-title {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 9px;
+  color: $secondary-text-color;
+  margin: 0 0 8px;
+}
+
+.form__input-field-title_place_profile {
+  font-size: 13px;
+  line-height: 13px;
+  color: $primary-text-color;
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.form__input-field-title_color_grey {
+  color: $secondary-text-color;
+}
+
+.form__input-error {
+  min-height: 8px;
+  margin-top: 7px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 8px;
+  color: $red;
+}
+
+.form__input-error_place_profile {
+  display: none;
+}

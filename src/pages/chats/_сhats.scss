@@ -1,0 +1,38 @@
+@import '../../utils/library';
+
+.chats {
+  display: flex;
+  width: 95vw;
+  height: 100vw;
+}
+
+.chats__chats-continer {
+  border-right: 1px solid $profile-input-border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chats__chat-search-bar {
+  border: none;
+  background-color: $profile-input-border;
+  border-radius: 5px;
+}
+
+.chats__chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chats__chat {
+  border: 1px solid $profile-input-border;
+}
+
+.chats__current-chat {
+  height: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

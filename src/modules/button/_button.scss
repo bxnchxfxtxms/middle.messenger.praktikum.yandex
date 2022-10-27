@@ -1,0 +1,21 @@
+@import '../../utils/library';
+
+.form__button {
+  margin: 154px 0 14px;
+  padding: 0;
+  border: none;
+  width: 280px;
+  height: 37px;
+  background-color: $blue;
+  color: $white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form__button_place_signin {
+  margin-top: 47px; 
+}

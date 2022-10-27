@@ -1,0 +1,27 @@
+<section class="section">
+  {{> avatar}}
+  <div class="form__form-container form__form-container_place_profile">
+    <div class="form__input-fields">
+      {{#each field}}
+        <div class="form__form-label form__form-label_place_profile">
+          <p class="form__input-field-title form__input-field-title_place_profile">
+            {{this.title}}
+          </p>
+          <p class="form__input-field-title form__input-field-title_place_profile form__input-field-title_color_grey">
+            {{this.currentValue}}
+          </p>
+        </div>
+      {{/each}}
+    </div>
+    <div class="profile__links-container">
+      {{#each link}}
+        <div class="form__form-label form__form-label_place_profile">
+          <a class="profile__link {{this.profileLinkModificator}} opacity-animation" href="{{this.link}}">
+            {{this.title}}
+          </a>
+        </div>
+      {{/each}}
+    </div>
+    <div></div>
+  </div>
+</section>
